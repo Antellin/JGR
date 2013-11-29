@@ -15,8 +15,10 @@ import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
+import org.eclipse.swt.widgets.Text;
 
 public class Wind extends ApplicationWindow {
+	private Text text;
 
 	/**
 	 * Create the application window.
@@ -37,11 +39,14 @@ public class Wind extends ApplicationWindow {
 	protected Control createContents(Composite parent) {
 		Composite container = new Composite(parent, SWT.NONE);
 		
+		text = new Text(container, SWT.BORDER);
+		text.setBounds(10, 73, 180, 62);
+		
 		Button btnNewTestButton = new Button(container, SWT.NONE);
 		btnNewTestButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseDown(MouseEvent e) {
-				System.out.println("NewTestButton pressed!!!");
+				text.setText("NewTestButton pressed!!!");
 			}
 		});
 		btnNewTestButton.addSelectionListener(new SelectionAdapter() {
@@ -51,6 +56,8 @@ public class Wind extends ApplicationWindow {
 		});
 		btnNewTestButton.setBounds(10, 27, 110, 25);
 		btnNewTestButton.setText("New Test Button");
+		
+		
 
 		return container;
 	}
