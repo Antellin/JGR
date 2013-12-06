@@ -15,5 +15,6 @@
 	<classpathentry kind="lib" path="D:/eclipse/plugins/com.ibm.icu_50.1.1.v201304230130.jar" sourcepath="D:/eclipse/plugins/com.ibm.icu_50.1.1.v201304230130.jar"/>
 	<classpathentry kind="lib" path="D:/eclipse/plugins/org.eclipse.ui.forms_3.6.0.v20130517-0139.jar" sourcepath="D:/eclipse/plugins/org.eclipse.ui.forms_3.6.0.v20130517-0139.jar"/>
 	<classpathentry kind="lib" path="C:/Users/vladyslav.gudymenko/git/JGR/Wind/lib/derby.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/EclipseLink 2.5.0 - Kepler"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
